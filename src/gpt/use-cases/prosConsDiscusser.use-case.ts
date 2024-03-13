@@ -24,6 +24,6 @@ export const prosConsDiscusserUseCase = async(openai: OpenAI, { prompt }: Option
         model: 'gpt-3.5-turbo'
     });
 
-    return response.choices[0].message.content;
+    return response.choices[0].message;
 
 }
